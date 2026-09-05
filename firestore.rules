@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Student records keyed by 관리코드 (management code)
+    match /student_records/{studentCode} {
+      allow read, write: if true;
+    }
+    match /climate_stats/{statId} {
+      allow read, write: if true;
+    }
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

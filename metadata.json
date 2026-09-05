@@ -1,0 +1,6 @@
+{
+  "name": "나무런",
+  "description": "기후 데이터를 활용한 초등학생 교육용 웹 러닝 게임",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
